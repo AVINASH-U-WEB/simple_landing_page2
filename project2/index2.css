@@ -1,0 +1,1555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main1{
+    background-color: white;
+    max-height: 80px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 5px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+.main1 ul{
+    list-style: none;
+    display: flex;
+}
+.main1 ul li{
+    padding:  10px 30px;
+}
+.main1 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    transition:  all 0.3s;
+}
+.main1 ul li a:hover{
+    color: blueviolet;
+
+}
+.main1 a{
+    position: relative;
+    right: 120px;
+    top: 9PX;
+    font-size: 20px;
+}
+.logo{
+    position: relative;
+    right: 2px;
+    top: 9px;
+    font-weight: bold;
+}
+.main1 button{
+    position: relative;
+    background-color: blueviolet;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 2px;
+    top: 9px;
+    border: 1px solid blueviolet;
+}
+.main1 button:hover{
+   transform: scale(0.96);
+     
+}
+.main2{
+    position: relative;
+    top: 50px;
+    max-width:700px;
+    background-color: rgba(233, 150, 122, 0.429);
+    height: 700px;
+    max-height: 1800px ;
+}
+.main2 p{
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submain3{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: darkgray;
+    line-height: 1.5em;
+}
+.submain2{
+    color: blueviolet;
+}
+.main2 button{
+    position: relative;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    max-height: 200px;
+    box-shadow: 2px;
+    border: 1px solid blueviolet;
+    top: 50px;
+}
+.main2 button:hover{
+    transform: scale(0.96);
+}
+.image1{
+    position: relative;
+    left: 700px;
+    width: 900px;
+    max-width:700px;
+    height: 700px;
+    max-height: 1800px ;
+    bottom: 350px;
+}
+.playbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    border-radius: 100%;
+    position: relative;
+    bottom: 750px;
+    left: 650px;
+}
+.playbutton::before{
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom1 1.5s linear infinite;
+    opacity: 0;
+    z-index: 1;
+}
+.playbutton::after{
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom2 1.5s linear infinite;
+    opacity: 0;
+    z-index: 1;
+    animation-delay: .4s;
+}
+@keyframes bloom1{
+    0%{
+        transform: scale(.5);
+    }
+    50%{
+        opacity:1 ;
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@keyframes bloom2{
+        0%{ 
+            transform: scale(.5);
+        }
+        50%{
+            opacity:1 ;
+        }
+        100%{
+            transform: scale(1.5);
+        }
+}
+.main3{
+    position: relative;
+    top: 200px;
+   text-align: center;
+   font-size: 50px;
+}
+.submain3a{
+    color: darkgray;
+    font-size: 20px;
+}
+.color2{
+    position: relative;
+    right: 510px;
+    top: 50px;
+}
+.bold2{
+    position: relative;
+    right: 400px;
+    font-size:22px;
+    bottom: 20px;
+    font-weight: bold;
+}
+.subpara2{
+    position: relative;
+    right: 350px;
+    font-size: 20px;
+    bottom: 40px;
+}
+.color3{
+    position: relative;
+    right: 200px;
+    bottom: 130px;
+}
+.bold3{
+    position: relative;
+    left: 20px;
+    font-size:22px;
+    bottom: 200px;
+    font-weight: bold;
+}
+.subpara3{
+    position: relative;
+    left: 70px;
+    font-size: 20px;
+    bottom: 220px;
+}
+.color4{
+    position: relative;
+    left: 210px;
+    bottom: 300px;
+}
+.bold4{
+    position: relative;
+    left: 440px;
+    font-size:22px;
+    bottom: 380px;
+    font-weight: bold;
+}
+.subpara4{
+    position: relative;
+    left: 477px;
+    font-size: 20px;
+    bottom: 400px;
+}
+.subpara2a{
+    position: relative;
+    bottom:25px;
+    left: 20px;
+}
+.subpara3a{
+    position: relative;
+    bottom:25px;
+    left: 20px;
+}
+.subpara4a{
+    position: relative;
+    bottom:25px;
+    right: 15px;
+}
+.main4 h1{
+    position: relative;
+    left: 600px;
+}
+.main4 p{
+    position: relative;
+    left: 600px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: darkgray;
+}
+.main4 ul{
+    position: relative;
+    left: 620px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: darkgray;
+
+}
+.main4 ul li{
+    padding-top: 10px;
+}
+.main4 a{
+    position: relative;
+    top: 50px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    max-height: 200px;
+    box-shadow: 2px;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    right: 10PX;
+}
+.main4 img{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    left: 50px;
+    bottom: 270px;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px  black;
+}
+.submain4{
+    position: relative;
+    bottom: 270px;
+    left: 50px;
+    color: white;
+    height:150px;
+    width: 500px;
+    padding: 6px;
+    background: rgb(27, 27, 27,.5);
+    top:-424px;
+}
+.submain4 h2{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.submain4:hover{
+    cursor:pointer;
+}
+.main5{
+    position: relative;
+    bottom: 170px;
+}
+.main5 h1{
+    position: relative;
+    left:60px;
+}
+.main5 p{
+    position: relative;
+    left: 60px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: darkgray;
+}
+.main5 ul{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: darkgray;
+
+}
+.main5 ul li{
+    padding-top: 10px;
+}
+.main5 a{
+    position: relative;
+    top: 50px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    max-height: 200px;
+    box-shadow: 2px;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    left: 10PX;
+}
+.main5 img{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    left: 690px;
+    bottom: 270px;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px  black;
+}
+.submain5{
+    position: relative;
+    bottom: 270px;
+    left:690px;
+    color: white;
+    height:150px;
+    width: 500px;
+    padding: 6px;
+    background: rgb(27, 27, 27,.5);
+    top:-424px;
+}
+.submain5 h2{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.main6{
+    position: relative;
+    bottom: 370px;
+}
+.subpar6a{
+    position: relative;
+    bottom:25px;
+    right: 15px;
+}
+.main6 h1{
+    position: relative;
+    left: 600px;
+}
+.main6 p{
+    position: relative;
+    left: 600px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: darkgray;
+}
+.main6 ul{
+    position: relative;
+    left: 620px;
+    top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: darkgray;
+
+}
+.main6 ul li{
+    padding-top: 10px;
+}
+.main6 a{
+    position: relative;
+    top: 50px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    max-height: 200px;
+    box-shadow: 2px;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    right: 10PX;
+}
+.main6 img{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    left: 50px;
+    bottom: 270px;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px  black;
+}
+.submain6{
+    position: relative;
+    bottom: 270px;
+    left: 50px;
+    color: white;
+    height:150px;
+    width: 500px;
+    padding: 6px;
+    background: rgb(27, 27, 27,.5);
+    top:-424px;
+}
+.submain6 h2{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.submain6:hover{
+    cursor:pointer;
+}
+.main7{
+    position: relative;
+    bottom: 630px;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.382);
+    height: 1150px;
+
+}
+.main7 p{
+    position: relative;
+    top: 40PX;
+    font-size: 40px;
+}
+.main7 h4{
+    position: relative;
+    bottom: 10px;
+    top: 30PX;
+    color: dimgrey;
+}
+.main7 p span{
+    color: blueviolet;
+    font-weight: 900;
+}
+.submain7{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    top: 100px;
+    left: 80px;
+}
+.submain7 p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7 h1 {
+    position: relative;
+    right: 50px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7 h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage1{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.subimage1a{
+    position: relative;
+    right: 170px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.submain7a{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    bottom: 300px;
+    left: 480px;
+}
+.submain7a p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7a h1 {
+    position: relative;
+    right: 30px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7a h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage2{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.subimage1b{
+    position: relative;
+    right: 179px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.submain7b{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    bottom: 700px;
+    left: 880px;
+}
+.submain7b p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7b h1 {
+    position: relative;
+    right: 30px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7b h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage3{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.subimge1c{
+    position: relative;
+    right: 179px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.submain7c{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    bottom: 670px;
+    left: 80px;
+}
+.submain7c p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7c h1 {
+    position: relative;
+    right: 30px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7c h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage4{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.subimage1d{
+    position: relative;
+    right: 179px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.submain7d{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    bottom: 1070px;
+    left: 480px;
+}
+.submain7d p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7d h1 {
+    position: relative;
+    right: 30px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7d h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage5{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.subimage1e{
+    position: relative;
+    right: 161px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.submain7e{
+    position: relative;
+    background-color: whitesmoke;
+    width: 370px;
+    height: 400px;
+    bottom: 1470px;
+    left: 880px;
+}
+.submain7e p {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: 100px;
+}
+.submain7e h1 {
+    position: relative;
+    right: 30px;
+    text-align: none;
+    top: 190px;
+    font-size: 20px;
+
+}
+.submain7e h2 {
+    position: relative;
+    right:25px;
+    top: 175px;
+    font-size: 15px;
+}
+.subimage6{
+    position: relative;
+    right: 45px;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.sumimage1g{
+    position: relative;
+    right: 162px;
+    top: 250px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.main8{
+    position: relative;
+    bottom: 450px;
+    left: 90px;
+}
+.main8 h4{
+    color: darkgray;
+    font-size: 20px;
+}
+.main8para1{
+    position: relative;
+    top: 20px;
+    font-size: 43px;
+    font-weight: 500;
+}
+.main8para1 span{
+    color:blueviolet ;
+
+}
+.main9para2{
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    color: darkgray;
+    font-weight: 200;
+
+}
+.main8 a{
+    position: relative;
+    top: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    box-shadow: 2px;
+    text-decoration: none;
+}
+.submain9{
+    position: relative;
+    left: 800px;
+    bottom: 720px;
+}
+.submain9 img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    bottom: 55px;
+    right: 90px;
+}
+.submain9 h4{
+    font-size: larger;
+    font-weight: 580;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submain9 p{
+    position: relative;
+    top: 10px;
+    color: darkgrey;
+    font-weight: 400;
+}
+.submain9a{
+    position: relative;
+    left: 800px;
+    bottom:719px;
+}
+.submain9a img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    bottom: 60px;
+    right: 90px;
+}
+.submain9a h4{
+    font-size: larger;
+    font-weight: 580;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submain9a p{
+    position: relative;
+    top: 10px;
+    color: darkgrey;
+    font-weight: 400;
+}
+.submain9b{
+    position: relative;
+    left: 800px;
+    bottom:717px;
+}
+.submain9b img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    bottom: 60px;
+    right: 90px;
+}
+.submain9b h4{
+    font-size: larger;
+    font-weight: 580;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submain9b p{
+    position: relative;
+    top: 10px;
+    color: darkgrey;
+    font-weight: 400;
+}
+.submain9c{
+    position: sticky;
+}
+.submain9c{
+    position: relative;
+    left: 800px;
+    bottom:717px;
+}
+.submain9c img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    bottom: 60px;
+    right: 90px;
+}
+.submainc h4{
+    font-size: larger;
+    font-weight: 580;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submain9c p{
+    position: relative;
+    top: 10px;
+    color: darkgrey;
+    font-weight: 400;
+}
+.image1a{
+    position: relative;
+    width: 700px;
+    height: 800px;
+    bottom: 560px;
+}
+.main10 h4{
+    position: relative;
+    bottom: 1100px;
+    left: 800px;
+    color: gray;
+    font-weight: 300;
+}
+.subpara1{
+    position: relative;
+    bottom: 1090px;
+    left: 800px;
+    font-size: 44px;
+}
+.subpara1 span{
+    color: blueviolet;
+    font-family: inherit;
+}
+.subpara2{
+    position: relative;
+    bottom: 1060px;
+    left: 800px;
+    color: darkgray;
+}
+.subpara3{
+    position: relative;
+    left:800px;
+    bottom: 1030px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.summain10 h3{
+    position: relative;
+    bottom:1020px;
+    left: 800px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;   
+}
+.submain9image2{
+    position: relative;
+    bottom: 1280px;
+    left: 800px;
+    width: 100px;
+    height: 100px;
+}
+
+.subpara4{
+    position: relative;
+    left:1100px;
+    bottom: 1240px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.summain10 h2{
+    position: relative;
+    bottom:1230px;
+    left: 1100px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;   
+}
+.submain9image1{
+    position: relative;
+    bottom: 1070px;
+    left: 1100px;
+    width: 100px;
+    height: 100px;
+}
+.summain10{
+    position: relative;
+    bottom: 200px;
+}
+.main11image1{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    left: 90px;
+    bottom: 1100px;
+    border-radius: 10px;
+
+}
+.main11image2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 520px;
+    bottom: 780px;
+    border-radius: 10px;
+}
+.main11image3{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 500px;
+    bottom: 780px;
+    border-radius: 10px;
+}
+.submain11{
+    position: relative;
+    bottom: 400px;
+}
+.submain11 h4{
+    position: relative;
+    bottom: 900px;
+    left: 780px;
+}
+.subpar1main11{
+    position: relative;
+    left: 780px;
+    bottom: 880px;
+    font-size: 42px;
+}
+.subpar1main11 span{
+    color: blueviolet;
+    font-weight: 400;
+}
+.heading1{
+    position: relative;
+    bottom: 850px;
+    left: 780px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.subpar1amain11{
+    position: relative;
+    bottom: 860px;
+    left: 780px;
+    font-size: 20px;
+    color: darkgray;
+}
+.heading2{
+    position: relative;
+    bottom: 950px;
+    left: 1080px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.subpar1bmain11{
+    position: relative;
+    bottom: 950px;
+    left: 1080px;
+    font-size: 20px;
+    color: darkgray;
+}
+.heading3{
+    position: relative;
+    bottom: 900px;
+    left: 780px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.subpar1cmain11{
+    position: relative;
+    bottom: 888px;
+    left: 780px;
+    font-size: 20px;
+    color: darkgray;
+}
+.heading4{
+    position: relative;
+    bottom: 978px;
+    left: 1080px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.subpar1dmain11{
+    position: relative;
+    bottom: 960px;
+    left: 1080px;
+    font-size: 20px;
+    color: darkgray;
+}
+.main12{
+    background-color: rgba(169, 169, 169, 0.327);
+    width: 1500px;
+    position: relative;
+    height: 1400px;
+    bottom:1100px;
+}
+.main12para{
+    position: relative;
+    left: 590px;
+    top: 100px;
+}
+.main12subpara1{
+    position: relative;
+    left: 400px;
+    top: 190px;
+    font-size: 35px;
+}
+
+.h3main{
+    position: relative;
+    left: 620px;
+    top: 20px;
+    font-weight: 100;
+    color: darkgray;
+}
+.main12apara{
+    position: relative;
+    top: 40px;
+    left: 290px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.main12apara span{
+    color: blueviolet;
+}
+.submain12a img{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(169, 169, 169, 0.294);
+    border-radius: 50%;
+}
+.submain12a{
+    position: relative;
+    left: 480px;
+    background-color: whitesmoke;
+    width: 390px;
+    height: 550px;
+    top: 80px;
+    border-radius: 20px;
+}
+.submain12a h1{
+    padding-top: 70px;
+    position: relative;
+    left: 140px;
+    font-size: 45px;
+    font-family:monospace;
+    font-weight: 500;
+    color: blueviolet;
+}
+.span1{
+    position: relative;
+    left:120px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.submain12a p{
+    position: relative;
+    left: 120px;
+    top: 50px;
+    font-size: 20px;
+    color: darkgray;
+}
+.imag1main12{
+    position: relative;
+    top: 75px;
+    right: 40px;
+}
+
+.paramain1{
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.imag2main12{
+    position: relative;
+    left: 95px;
+    top: 77px;
+}
+.imag3main12{
+    position: relative;
+    left: 95px;
+    top: 77px;
+}
+.imag4main12{
+    position: relative;
+    left: 95px;
+    top: 77px;
+}
+.imag5main12{
+    position: relative;
+    left: 95px;
+    top: 77px;
+}
+.submain12a a{
+    position: relative;
+    left: 95px;
+    top: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    box-shadow: 2px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.submain12b{
+    position: relative;
+    left: 60px;
+    background-color: whitesmoke;
+    width: 390px;
+    height: 550px;
+    bottom: 430px;
+    border-radius: 20px;
+}
+.submain12b h1{
+    padding-top: 70px;
+    position: relative;
+    left: 140px;
+    font-size: 45px;
+    font-family:monospace;
+    font-weight: 500;
+    color: blueviolet;
+}
+.span1{
+    position: relative;
+    left:120px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.submain12b p{
+    position: relative;
+    left: 120px;
+    top: 50px;
+    font-size: 20px;
+    color: darkgray;
+}
+.imagesubmain12b{
+    position: relative;
+    top: 75px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+.paramain1{
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.imag2main12ba{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag3main12ba{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag4main12ba{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag5main12ba{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.submain12b a{
+    position: relative;
+    left: 95px;
+    top: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    box-shadow: 2px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.submain12c{
+    position: relative;
+    left: 900px;
+    background-color: whitesmoke;
+    width: 390px;
+    height: 550px;
+    bottom:975px;
+    border-radius: 20px;
+}
+.submain12c h1{
+    padding-top: 70px;
+    position: relative;
+    left: 140px;
+    font-size: 45px;
+    font-family:monospace;
+    font-weight: 500;
+    color: blueviolet;
+}
+.span1{
+    position: relative;
+    left:120px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.submain12c p{
+    position: relative;
+    left: 120px;
+    top: 50px;
+    font-size: 20px;
+    color: darkgray;
+}
+.imagesubmain12c{
+    position: relative;
+    top: 75px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+.paramain1{
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.imag2main12bc{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag3main12bc{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag4main12bc{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.imag5main12bc{
+    position: relative;
+    left: 95px;
+    top: 77px;
+    width: 20px;
+    height: 20px;
+}
+.submain12c a{
+    position: relative;
+    left: 95px;
+    top: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    box-shadow: 2px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.span1{
+    background-color: blueviolet;
+    border-radius: 10PX;
+    color: white;
+}
+.sub1{
+    position: relative;
+    bottom: 900px;
+    left: 70px;
+    font-size: 20PX;
+    font-weight: 100;
+}
+.sub1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub1 img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    right: 25px;
+}
+.sub2{
+    position: relative;
+    bottom: 1050px;
+    left:740px;
+    font-size: 20PX;
+    font-weight: 100;
+}
+.sub2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub2 img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    right: 25px;
+}
+.sub3{
+    position: relative;
+    bottom: 1000px;
+    left: 70px;
+    font-size: 20PX;
+    font-weight: 100;
+}
+.sub3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub3 img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    right: 25px;
+}
+.sub4{
+    position: relative;
+    bottom: 1150px;
+    left:740px;
+    font-size: 20PX;
+    font-weight: 100;
+}
+.sub4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub4 img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    right: 25px;
+}
+.main13{
+    position: relative;
+    bottom: 1100px;
+    height: 700px;  
+    background-color:#0C133B;
+}
+.subamain13a h4{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 70px;
+    font-size: 40px;
+    font-weight:300;
+}
+.subamain13a a{
+    position: relative;
+    left: 1080px;
+    top: 20px;
+    background-color: rgba(137, 43, 226, 0.728);
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px;
+    text-decoration: none;
+}
+.hara{
+    position: relative;
+    top: 110px;
+}
+.submain13b img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    left: 2px;
+    top: 30px;
+}
+.submain13b{
+    position: relative;
+    top: 200px;
+    left: 70PX;
+    color: white;
+    font-size: 30PX;
+}
+.submain13b p{
+    position: relative;
+    top: 17px;
+    font-size: 22px;
+}
+.submain13c{
+    position: relative;
+    color: white;
+    top: 80px;
+    left: 430px;
+    font-size: 22px;
+    font-weight: 200;
+}
+.submain13c1{
+    font-weight: 900;
+}
+
+.submain13c2{
+    position: relative;
+    top: 10px;
+}
+.submain13c3{
+    position: relative;
+    top: 40px;
+}
+.submain13c4{
+    position: relative;
+    top: 43px;
+}
+.submain13d{
+    position: relative;
+    bottom: 45px;
+    left: 800px;
+    font-size: 22px;
+    color: white;
+}
+.submain13d1{
+    font-weight: 900;
+}
+.submain13d2{
+    position: relative;
+    bottom: 172px;
+    font-size:20px;
+    color: white;
+    left: 1000px;
+}
+.submaind13d3{
+    font-weight: 900;
+}
+.email{
+    width: 250px;
+    height: 45px;
+    font-size: 0.5cm;
+    border: 1px solid blue;
+    border-radius: 8px;
+    position: relative;
+    top: 40px;
+    right: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
+    background-color:#0C133B;
+}
+.a1{
+    position: relative;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: 1px solid black;
+    box-shadow: 2px;
+    height: 59px;
+    right: 15px;
+    top: 40px;
+    text-decoration: none;
+    border-radius: 6px;
+}
